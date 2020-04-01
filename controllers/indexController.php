@@ -1,10 +1,10 @@
 <?php
 
-require_once 'models/album.php';
-require_once 'models/artist.php';
-require_once 'models/song.php';
+    require_once 'models/album.php';
+    require_once 'models/artist.php';
+    require_once 'models/song.php';
 
 
-$songs = getSongs();
+    $songs = getSongs();
 
-include 'views/index.php';
+    include 'views/index.php';

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e595003f-d745-47a2-b677-fe5e9dd21483" name="Default Changelist" comment="" />
+    <list default="true" id="e595003f-d745-47a2-b677-fe5e9dd21483" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/albumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/albumController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/artistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/artistController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/indexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/indexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/songController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/songController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Album.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Album.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +29,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1YaZUhdQ8yAJEGErl7NPFm2Jtzy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\cours\back\playlist-mvc-GmidenFatma\admin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,10 +77,29 @@
       <option name="presentableId" value="Default" />
       <updated>1583182682732</updated>
       <workItem from="1583182684194" duration="5601000" />
+      <workItem from="1583241510447" duration="4126000" />
+      <workItem from="1583759893404" duration="25000" />
+      <workItem from="1585664374807" duration="243000" />
+      <workItem from="1585664737551" duration="866000" />
+      <workItem from="1585665878786" duration="8238000" />
+      <workItem from="1585746129005" duration="2465000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

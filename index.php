@@ -13,7 +13,7 @@
 <?php
 
 
-require ('helpers.php');
+require_once ('helpers.php');
 
 if(isset($_GET['p'])):
     switch ($_GET['p']):

@@ -4,7 +4,7 @@ function getAlbums($artistId = false){
 
   if($artistId != false){
 
-      $query = $db->prepare("SELECT * FROM album where artist_id = ?");
+      $query = $db->prepare("SELECT * FROM album WHERE artist_id = ?");
       if ($query->execute(array($artistId))) {
           $albums = $query->fetchAll();
           return $albums;
@@ -19,11 +19,13 @@ function getAlbums($artistId = false){
   }
 }
 
-function getAlbum($id){
+function getAlbum($id)
+{
     $db = dbConnect();
 
-    $query = $db->prepare("SELECT * FROM album where id = ?");
-    if ($query->execute(array($id))) {
+    $query = $db->prepare("SELECT * FROM album WHERE id = ?");
+    if ($query->execute(array($id)))
+    {
         $album = $query->fetch();
         return $album;
     }

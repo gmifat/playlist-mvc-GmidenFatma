@@ -1,9 +1,9 @@
 
-    <?php require ('partials/header.php'); ?>
+    <?php require ('views/partials/header.php'); ?>
 
-    <?php require ('partials/menu.php'); ?>
+    <?php require ('views/partials/menu.php'); ?>
 
-        <h2>ici la liste complète des artistes</h2>
+        <h2>Liste complète des artistes</h2>
     <?php if(isset($artists))
     {
         foreach ($artists as $artist) : ?>

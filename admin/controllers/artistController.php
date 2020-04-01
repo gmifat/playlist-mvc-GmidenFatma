@@ -13,6 +13,18 @@
 
         case 'new':
             //formulaire vide
+
+
+            if (!empty($_POST['name']) && !empty($_POST['biography']))
+            {
+                $result = addArtist($_POST['name'], $_POST['biography']);
+                if ($result == true)
+                {
+                    header('Location:index.php?controller=artists&action=list');
+                    exit;
+                }
+            }
+
             require ('views/artist/artistForm.php');
             break;
 

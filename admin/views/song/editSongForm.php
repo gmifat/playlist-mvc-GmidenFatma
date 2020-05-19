@@ -4,10 +4,10 @@
     <?php require ('views/partials/menu.php'); ?>
 
 
-    <?php if(isset($_SESSION['messages'])): ?>
-        <div>
-            <?php foreach($_SESSION['messages'] as $message): ?>
-                <?= $message ?><br>
+    <?php if (isset ($_SESSION['messages'])) : ?>
+        <div class="alert alert-danger" role="alert">
+            <?php foreach ($_SESSION['messages'] as $message) : ?>
+                <?= $message ; ?><br>
             <?php endforeach; ?>
         </div>
     <?php endif; ?>

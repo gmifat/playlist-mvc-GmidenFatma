@@ -4,7 +4,7 @@
 
 
     <?php if (isset ($_SESSION['messages'])) : ?>
-        <div>
+        <div class="alert alert-success" role="alert">
             <?php foreach ($_SESSION['messages'] as $message) : ?>
                 <?= $message ; ?><br>
             <?php endforeach; ?>

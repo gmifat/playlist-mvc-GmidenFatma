@@ -4,17 +4,17 @@
     <?php require ('views/partials/menu.php'); ?>
 
 
-    <?php if(isset($_SESSION['messages'])): ?>
-        <div>
-            <?php foreach($_SESSION['messages'] as $message): ?>
-                <?= $message ?><br>
+    <?php if (isset ($_SESSION['messages'])) : ?>
+        <div class="alert alert-danger" role="alert">
+            <?php foreach ($_SESSION['messages'] as $message) : ?>
+                <?= $message ; ?><br>
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
 
         <h2>Ajouter un artist</h2>
         <!--<form action="index.php?controller=artists&action=add" method="post" enctype="multipart/form-data">-->
-        <form action="index.php?controller=artists&action=<?= isset($artist) || isset($_SESSION['old_inputs']) && $_GET['action'] == 'edit'? 'edit&id='. $_GET['id'] : 'add' ?>" method="post" enctype="multipart/form-data">
+        <form action="index.php?controller=artists&action=add" method="post" enctype="multipart/form-data">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label col-form-label-lg" for="name">Nom</label>
                 <input class="col-sm-10" type="text" name="name" id="name" value="<?= isset($_SESSION['old_inputs']) ? $_SESSION['old_inputs']['name'] : '' ?>" /><br>

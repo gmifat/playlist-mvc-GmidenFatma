@@ -4,9 +4,13 @@
 
     <?php if(isset($_SESSION['messages'])): ?>
 
-        <?php foreach($_SESSION['messages'] as $message): ?>
-            <?= $message ?><br>
-        <?php endforeach; ?>
+    <?php if (isset ($_SESSION['messages'])) : ?>
+        <div class="alert alert-success" role="alert">
+            <?php foreach ($_SESSION['messages'] as $message) : ?>
+                <?= $message ; ?><br>
+            <?php endforeach; ?>
+        </div>
+    <?php endif; ?>
 
     <?php endif; ?>
 

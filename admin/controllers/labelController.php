@@ -22,7 +22,7 @@
             {
                 $_SESSION['messages'][] = 'Le champ nom est obligatoire !';
                 $_SESSION['old_inputs'] = $_POST;
-                header('Location:index.php?controller=artists&action=new');
+                header('Location:index.php?controller=labels&action=new');
                 exit;
             }
             else
@@ -84,12 +84,11 @@
                 }
 
                 header('Location:index.php?controller=labels&action=list');
-                //header('Location:index.php?controller=artists&action=edit&id='.$_POST['id']);
                 exit;
             }
             else
             {
-                header('Location:index.php?controller=artists&action=list');
+                header('Location:index.php?controller=labels&action=list');
                 exit;
             }
 

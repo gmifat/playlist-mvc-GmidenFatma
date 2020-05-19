@@ -3,7 +3,7 @@
     <?php (require 'views/partials/header.php'); ?>
 
     <?php if (isset ($_SESSION['messages'])) : ?>
-        <div>
+        <div class="alert alert-danger" role="alert">
             <?php foreach ($_SESSION['messages'] as $message) : ?>
                 <?= $message ; ?><br>
             <?php endforeach; ?>

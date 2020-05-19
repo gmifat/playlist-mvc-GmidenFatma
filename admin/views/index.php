@@ -3,7 +3,7 @@
 
     <?php require ('partials/menu.php'); ?>
 
-    <div class="text-center" style="margin-top: 30px">
+    <div class="text-center">
         <div style="width: 400px;margin: auto;">
             <form class="form-signin">
                 <img class="mb-4" src="../assets/images/logo.png" alt="" width="72" height="72">

@@ -3,7 +3,7 @@ function getSongs($albumId = false){
 
     $db = dbConnect();
     if($albumId != false){
-        $query = $db->prepare("SELECT * FROM song where album_id = ?");
+        $query = $db->prepare("SELECT * FROM songs where album_id = ?");
         if ($query->execute(array($albumId))) {
             $songs = $query->fetchAll();
             return $songs;
@@ -12,7 +12,7 @@ function getSongs($albumId = false){
         return false;
     }
     else{
-        $query = $db->query('SELECT * FROM song');
+        $query = $db->query('SELECT * FROM songs');
         $songs = $query->fetchAll();
         return $songs;
     }
@@ -21,7 +21,7 @@ function getSongs($albumId = false){
 function getSong($id){
     $db = dbConnect();
 
-    $query = $db->query("SELECT * FROM song where id = $id");
+    $query = $db->query("SELECT * FROM songs where id = $id");
     $song = $query->fetch();
     return $song;
 }

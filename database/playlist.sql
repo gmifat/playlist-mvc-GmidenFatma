@@ -16,13 +16,9 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
---
--- Base de données :  `playlist`
---
-CREATE DATABASE IF NOT EXISTS `playlist` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `playlist`;
+
+
 
 -- --------------------------------------------------------
 
@@ -38,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `albums` (
   `artist_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `artist_id` (`artist_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `albums`
@@ -71,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `artists` (
   `label_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `label_id` (`label_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `artists`
@@ -108,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `artists_labels` (
   PRIMARY KEY (`id`),
   KEY `artists_labels_label_id` (`label_id`) USING BTREE,
   KEY `artists_labels_artist_id` (`artist_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `artists_labels`
@@ -134,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `images` (
   `src_image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `artist_id` (`artist_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -147,7 +143,7 @@ CREATE TABLE IF NOT EXISTS `labels` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `labels`
@@ -181,7 +177,7 @@ CREATE TABLE IF NOT EXISTS `songs` (
   PRIMARY KEY (`id`),
   KEY `artist_id` (`artist_id`,`album_id`),
   KEY `songs_album_id` (`album_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=131 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=131 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `songs`
@@ -215,7 +211,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contraintes pour les tables déchargées

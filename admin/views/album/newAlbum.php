@@ -1,6 +1,7 @@
 
-    <?php (require 'views/partials/menu.php'); ?>
     <?php (require 'views/partials/header.php'); ?>
+    <?php (require 'views/partials/menu.php'); ?>
+
 
     <?php if (isset ($_SESSION['messages'])) : ?>
         <div class="alert alert-danger" role="alert">

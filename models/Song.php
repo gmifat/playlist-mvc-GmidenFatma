@@ -12,6 +12,7 @@ function getSongs($albumId = false){
         return false;
     }
     else{
+
         $query = $db->query('SELECT * FROM songs');
         $songs = $query->fetchAll();
         return $songs;

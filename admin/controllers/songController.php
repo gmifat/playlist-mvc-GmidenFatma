@@ -1,6 +1,6 @@
 <?php
 
-    require_once 'Models/Song.php';
+    require_once 'models/Song.php';
     require_once 'models/Artist.php';
     require_once 'models/Album.php';
 

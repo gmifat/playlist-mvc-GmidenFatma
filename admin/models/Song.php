@@ -58,7 +58,7 @@
             ]);
         }
         else{
-            $query = $db->prepare("UPDATE songs SET title = :title, artist_id = :artist_id WHERE id=:id");
+            $query = $db->prepare("UPDATE songs SET title = :title, artist_id = :artist_id, album_id=NULL WHERE id=:id");
             return $query->execute([
                 ':id' => $id,
                 ':title' => $title,
